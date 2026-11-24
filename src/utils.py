@@ -11,7 +11,6 @@ def calculator():
         elif op == '*':
             result = num1 * num2
         elif op == '/':
-            # Division by zero is a common error
             result = num1 / num2
         else:
             raise ValueError("Invalid operator")
@@ -25,7 +24,6 @@ def calculator():
         print("Error: Cannot divide by zero.")
 
     except Exception as e:
-        # Catches any unexpected error
         print("Unexpected error:", e)
 
 calculator()
